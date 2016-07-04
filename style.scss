@@ -1,0 +1,102 @@
+$color1 : rgb(200,219,224);
+$color2 : rgb(173,214,224);
+$color3 : rgb(98,148,161);
+$angle : 0deg;
+
+body {
+    min-height: 100vh;
+}
+
+html,body,h2 {
+    margin:0;
+    padding:0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+.header {
+	padding: 10px;
+	background-color: $color1; 
+	text-align: center;
+}
+
+.menu {
+    width: 500px;
+    margin: auto;
+    .menuItems {
+        width: 500px;
+        height: 300px;
+        display: block;
+        position: absolute;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        li {
+            position: absolute;
+            width: 100px;
+            padding: 10px;
+            background-color: $color1; 
+            border-radius: 100%;
+            cursor: pointer;
+        }
+        li:hover {
+            background-color: $color2;
+            font-weight: bold;
+            box-shadow: 0 0 15px $color3 inset;
+        }
+        #aboutMe {
+            left: 0;
+            top: 0;
+        }
+        #education {
+            right: 0;
+            top: 0;
+        }
+        #portfolio {
+            left: 110px;
+            top: -58px;
+        }
+        #contact {
+            right: 110px;
+            top: -58px;
+        }
+    }
+
+    h3 {
+        text-align: center;
+    }
+}
+
+
+.rotator {
+	display: block;
+	margin: 100px auto 20px auto;
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	background: url(./img/rot3.jpg);
+	background-size: 320px;
+	background-position: -10px 0;
+
+	-ms-transform: rotate($angle);
+    -webkit-transform: rotate($angle);
+    transform: rotate($angle);
+
+    -webkit-transition: transform 0.8s;
+    transition: transform 0.8s;
+
+    &:before {
+    	content: "";
+    	display: block;
+    	position: relative;
+    	left: 140px;
+    	top: -25px;
+    	background-color: $color2;
+    	height: 20px;
+    	width: 20px;
+    	border-radius: 100%;
+    }
+}
