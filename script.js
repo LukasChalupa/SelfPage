@@ -12,26 +12,29 @@ $(document).ready(function(){
 		switch(id) {
 			case "first": 
 				degree = -50;
-				$(".aboutMe").fadeIn(1500);
+				$(".content > div").hide(0);
+				$(".aboutMe").fadeIn(0);
 				break;
 			case "second":
 				degree = 50;
-				$(".education").fadeIn(1500);
+				$(".content > div").hide(0);
+				$(".education").fadeIn(0);
 				break;
 			case "third":
 				degree = -20;
-				$(".experience").fadeIn(1500);
+				$(".content > div").hide(0);
+				$(".experience").fadeIn(0);
 				break;
 			case "fourth":
 				degree = 20;
-				$(".contact").fadeIn(1500);
+				$(".content > div").hide(0);
+				$(".contact").fadeIn(0);
 				break;
 			default: degree = 0;
 		}
 		rotate($(".rotator"), degree);
 		
 	}, function(){
-		$(".content > div").fadeOut(0);
 		rotate($(".rotator"),0);
 	});
 });
