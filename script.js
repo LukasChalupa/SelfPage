@@ -2,8 +2,7 @@
 $(document).ready(function(){
 
 	function rotate(obj, deg) {
-		obj.css({"-ms-transform"    : "rotate(" + deg + "deg)",
-	  		     "-webkit-transform": "rotate(" + deg + "deg)",
+		obj.css({"-webkit-transform": "rotate(" + deg + "deg)",
 	  		     "transform"        : "rotate(" + deg + "deg)"});
 	}
 
@@ -11,16 +10,28 @@ $(document).ready(function(){
 		var degree;
 		var id = $(this).attr("id");
 		switch(id) {
-			case "aboutMe": degree = -50; break;
-			case "education": degree = 50; break;
-			case "portfolio": degree = -20; break;
-			case "contact": degree = 20; break;
+			case "first": 
+				degree = -50;
+				$(".aboutMe").fadeIn(1500);
+				break;
+			case "second":
+				degree = 50;
+				$(".education").fadeIn(1500);
+				break;
+			case "third":
+				degree = -20;
+				$(".experience").fadeIn(1500);
+				break;
+			case "fourth":
+				degree = 20;
+				$(".contact").fadeIn(1500);
+				break;
 			default: degree = 0;
 		}
 		rotate($(".rotator"), degree);
 		
 	}, function(){
+		$(".content > div").fadeOut(0);
 		rotate($(".rotator"),0);
-		
 	});
 });
