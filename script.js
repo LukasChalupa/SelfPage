@@ -9,26 +9,23 @@ $(document).ready(function(){
 	$(".menuItems li").hover(function(){
 		var degree;
 		var id = $(this).attr("id");
+		$(".content > div").hide();
 		switch(id) {
 			case "first": 
 				degree = -50;
-				$(".content > div").hide(0);
-				$(".aboutMe").fadeIn(0);
+				$(".aboutMe").show(500);
 				break;
 			case "second":
 				degree = 50;
-				$(".content > div").hide(0);
-				$(".education").fadeIn(0);
+				$(".education").show(500);
 				break;
 			case "third":
 				degree = -20;
-				$(".content > div").hide(0);
-				$(".experience").fadeIn(0);
+				$(".experience").show(500);
 				break;
 			case "fourth":
 				degree = 20;
-				$(".content > div").hide(0);
-				$(".contact").fadeIn(0);
+				$(".contact").show(500);
 				break;
 			default: degree = 0;
 		}

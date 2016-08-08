@@ -1,20 +1,20 @@
-$color1 : #92DEAF;
-$color2 : #5CD189;
-$color3 : rgb(98,148,161);
+$color1 : #707070;
+$color2 : #454545;
+$color3 : #e2e2e2;
 $angle : 0deg;
 
-body {
-    min-height: 100vh;
-    text-align: center;
-}
 html,body,h2,h3 {
     margin:0;
     padding:0;
 }
-
-html {
-    font-family: sans-serif;
+body {
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: $color3;
 }
+
 
 header {
 	padding: 10px;
@@ -45,7 +45,6 @@ nav {
         li:hover {
             //font-weight: bold;
             background-color: $color2;
-            //box-shadow: 0 0 15px $color3 inset;
         }
         #first {
             left: 0;
@@ -65,8 +64,13 @@ nav {
         }
     }
 
-    h3 {
+    p {
+        width: 200px;
+        padding: 10px;
+        margin: auto;
+        background-color: $color1;
         text-align: center;
+        border-radius: 5px;
     }
 }
 
@@ -105,8 +109,6 @@ nav {
     margin: 10px auto;
     background-color: $color1;
     text-align: left;
-    -webkit-transition: height 0.3s;
-    transition: height 0.3s;
     div {
         padding: 20px;
         display: none;
