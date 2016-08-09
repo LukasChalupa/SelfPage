@@ -1,6 +1,6 @@
-$color1 : #707070;
-$color2 : #454545;
-$color3 : #e2e2e2;
+$color1 : #9A523D;
+$color2 : #593F4A;
+$color3 : #E3C0A1;
 $angle : 0deg;
 
 html,body,h2,h3 {
@@ -42,7 +42,7 @@ nav {
             border-radius: 100%;
             cursor: pointer;
         }
-        li:hover {
+        li:hover, li:focus {
             //font-weight: bold;
             background-color: $color2;
         }
@@ -81,7 +81,7 @@ nav {
 	width: 300px;
 	height: 300px;
 	border-radius: 100%;
-	background: url(./img/rot3.jpg);
+	background: url(./img/cartoonish.jpg);
 	background-size: 320px;
 	background-position: -10px 0;
 
@@ -96,7 +96,7 @@ nav {
     	display: block;
     	position: relative;
     	left: 140px;
-    	top: -25px;
+    	top: -20px;
     	background-color: $color2;
     	height: 20px;
     	width: 20px;
@@ -105,7 +105,7 @@ nav {
 }
 
 .content {
-    width: 560px;
+    width: 700px;
     margin: 10px auto;
     background-color: $color1;
     text-align: left;

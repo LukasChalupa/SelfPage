@@ -10,9 +10,15 @@ $(document).ready(function(){
 	$(".menuItems li").hover(function(){
 		var degree;
 		var id = $(this).attr("id");
+		/* hide current box if not the same */
 		if(active != $(this).attr("id")) {
 			$(".content > div").hide();
 		}
+
+		/* change color after hover */
+		$(".menuItems li").css("background-color","#9A523D");
+		$(this).css("background-color","#593F4A");
+
 		switch(id) {
 			case "first": 
 				degree = -50;
