@@ -7,6 +7,10 @@ html,body,h2,h3 {
     margin:0;
     padding:0;
 }
+button {
+    border: none;
+}
+
 body {
     min-height: 100vh;
     text-align: center;
@@ -41,6 +45,8 @@ nav {
             background-color: $color1; 
             border-radius: 100%;
             cursor: pointer;
+            -webkit-transition: background-color 0.8s;
+            transition: background-color 0.8s;
         }
         li:hover, li:focus {
             //font-weight: bold;
@@ -64,13 +70,25 @@ nav {
         }
     }
 
-    p {
+    .rotButt {
         width: 200px;
         padding: 10px;
         margin: auto;
         background-color: $color1;
         text-align: center;
         border-radius: 5px;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+
+        -webkit-transition: background-color 0.3s;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: $color2;
+        }
+        &:active {
+            border: none;
+        }
     }
 }
 
@@ -108,9 +126,9 @@ nav {
     width: 700px;
     margin: 10px auto;
     background-color: $color1;
-    text-align: left;
+    text-align: justify;
+    border-radius: 10px;
     div {
-        padding: 20px;
         display: none;
     }
 }
