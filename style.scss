@@ -12,7 +12,6 @@ button {
 }
 
 body {
-    min-height: 100vh;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -101,13 +100,13 @@ nav {
 	border-radius: 100%;
 	background: url(./img/cartoonish.jpg);
 	background-size: 320px;
-	background-position: -10px 0;
+	background-position: center;
 
     -webkit-transform: rotate($angle);
     transform: rotate($angle);
 
-    -webkit-transition: transform 0.8s;
-    transition: transform 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
 
     &:before {
     	content: "";
@@ -128,6 +127,7 @@ nav {
     background-color: $color1;
     text-align: justify;
     border-radius: 10px;
+    padding: 20px;
     div {
         display: none;
     }

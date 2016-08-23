@@ -18,7 +18,6 @@ $(document).ready(function(){
 		/* change color after hover */
 		$(".menuItems li").css("background-color","#9A523D");
 		$(this).css("background-color","#593F4A");
-		$(".content").css("padding","20px");
 
 		switch(id) {
 			case "first": 
