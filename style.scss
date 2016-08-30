@@ -3,7 +3,7 @@ $color2 : #593F4A;
 $color3 : #E3C0A1;
 $angle : 0deg;
 
-html,body,h2,h3 {
+html,body,h2,h3,p {
     margin:0;
     padding:0;
 }
@@ -130,5 +130,34 @@ nav {
     padding: 20px;
     div {
         display: none;
+    }
+}
+
+.github-button {
+    display: inline-block;
+    padding: 5px;
+    line-height: 2em;
+    height: 2em;
+    background-color: $color3;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    -webkit-transition: padding 0.3s;
+    transition: padding 0.3s;
+    p, img {
+        float: left;
+        display: table-cell;
+    }
+    img {
+        height: 2em;
+    }
+    p {
+        color: black;
+        font-weight: bold;
+        vertical-align: middle;
+        margin: 0 10px;
+    }
+    &:hover {
+        padding: 10px;
     }
 }
